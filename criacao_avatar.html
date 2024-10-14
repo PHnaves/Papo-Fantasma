@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Avatar</title>
+    <link rel="stylesheet" href="pasta css/criacao_avatar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <i class="bi bi-arrow-left"></i>
+    <i class="bi bi-arrow-right"></i>
+    <h2>Crie seu avatar</h2>
+    <p>Da forma que quiser</p>
+
+    <div class="avatar-container">
+        <i class="bi bi-arrow-left"></i>
+        <i class="bi bi-arrow-right"></i>
+        <!-- Container do avatar -->
+        <div class="panel-container">
+            <!-- Painel de acessórios e itens (lado esquerdo) -->
+            <div class="panel panel-left">
+                <img src="cabelo1.png" alt="Cabelo 1" onclick="changeHair('cabelo1.png')">
+                <img src="cabelo2.png" alt="Cabelo 2" onclick="changeHair('cabelo2.png')">
+                <img src="cabelo3.png" alt="Cabelo 3" onclick="changeHair('cabelo3.png')">
+            </div>
+
+            <!-- Avatar -->
+            <div class="avatar" id="avatar">
+                <img src="boneco.png" id="body" alt="Avatar Corpo">
+                <img src="" id="hair" alt="Cabelo" style="display: none;">
+                <img src="" id="glasses" alt="Óculos" style="display: none;">
+            </div>
+
+            <!-- Painel de acessórios e itens (lado direito) -->
+            <div class="panel panel-right">
+                <img src="oculos1.png" alt="Óculos 1" onclick="changeGlasses('oculos1.png')">
+                <img src="oculos2.png" alt="Óculos 2" onclick="changeGlasses('oculos2.png')">
+                <img src="oculos3.png" alt="Óculos 3" onclick="changeGlasses('oculos3.png')">
+            </div>
+        </div>
+    </div>
+    
+    <a href="pagina_finalizar_cadastro.html"><button class="btn btn-next">Continuar</button></a>
+    
+    
+    <script>
+        function changeHair(hairStyle) {
+            var hair = document.getElementById('hair');
+            hair.src = hairStyle;
+            hair.style.display = 'block';
+        }
+
+        function changeGlasses(glassesStyle) {
+            var glasses = document.getElementById('glasses');
+            glasses.src = glassesStyle;
+            glasses.style.display = 'block';
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.js"></script>
+</body>
+</html>

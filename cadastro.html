@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="pasta css/cadastro.css">
+</head>
+<body id="cadastro">
+    <div class="wrapper-cadastro">
+        <h1>Cadastro</h1>
+        <img src="pasta imagens/logo_versao_black.png" width="80px" alt="Logo"> <!-- Tamanho da logo reduzido -->
+
+        <!-- Campo de RA e select de UF -->
+        <div class="input-box-cadastro">
+            <input class="input-cadastro" type="text" placeholder="Digite seu RA" required>
+            <select class="select-uf">
+                <option value="" disabled selected>UF</option> 
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>                
+            </select>
+            <img src="pasta imagens/png/001-do-utilizador.png" alt="">
+        </div>
+
+        <!-- Agrupamento de campos: nome completo e telefone -->
+        <div class="input-box-group-cadastro">
+            <div class="input-box-cadastro">
+                <input class="input-cadastro" type="text" placeholder="Nome Completo" required>
+                <img src="pasta imagens/png/002-do-utilizador-1.png" alt="">
+            </div>
+    
+            <div class="input-box-cadastro">
+                <input class="input-cadastro" type="tel" placeholder="Telefone" required>
+                <img src="pasta imagens/png/018-telefone.png" alt="">
+            </div>
+        </div>
+
+        <!-- Campo de criação de senha -->
+        <div class="input-box-cadastro">
+            <input id="senha1" class="input-cadastro" type="password" placeholder="Senha (máximo 20 caracteres)" maxlength="20" minlength="8" required>
+            <img src="pasta imagens/png/017-cadeado-trancado.png" alt="">
+            <i id="toggleSenha1" class="bi bi-eye-slash eye-icon" onclick="toggleSenha('senha1', 'toggleSenha1')"></i>
+        </div>
+
+        <!-- Campo de confirmação de senha -->
+        <div class="input-box-cadastro">
+            <input id="senha2" class="input-cadastro" type="password" placeholder="Confirmar senha" maxlength="20" minlength="8" required>
+            <img src="pasta imagens/png/017-cadeado-trancado.png" alt="">
+            <i id="toggleSenha2" class="bi bi-eye-slash eye-icon" onclick="toggleSenha('senha2', 'toggleSenha2')"></i>
+        </div>
+
+        <!-- Botão de cadastro -->
+        <button class="btn-cadastro" type="submit">Cadastrar</button>
+
+        <!-- Link para a página de login -->
+        <p class="register-link-cadastro">Já tem uma conta? <a href="login.html">Faça login</a></p>
+    </div>
+
+    <!-- Script JavaScript para alternar a visibilidade das senhas -->
+    <script>
+        function toggleSenha(inputId, toggleId) {
+            const senhaInput = document.getElementById(inputId);
+            const toggleIcon = document.getElementById(toggleId);
+            
+            if (senhaInput.type === "password") {
+                senhaInput.type = "text";
+                toggleIcon.classList.remove("bi-eye-slash");
+                toggleIcon.classList.add("bi-eye");
+            } else {
+                senhaInput.type = "password";
+                toggleIcon.classList.remove("bi-eye");
+                toggleIcon.classList.add("bi-eye-slash");
+            }
+        }
+    </script>
+</body>
+</html>
