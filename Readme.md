@@ -1,0 +1,3 @@
+Projeto que consiste em uma aplicacao web a qual iremos resolver um problema presente em todoas as escolas.
+Esse problema em questao é o esteriotipo, onde muitas pessoas deixam de fazer amizade só pelo simples fato da aparencia. Falando mais sobre o projeto, esta é a prototipação em html css e javascript onde ira conter somente
+a cara do projeto, as funcoes mais pesadas seram feitas de outra forma, acompanhem para mais detalhes...  
