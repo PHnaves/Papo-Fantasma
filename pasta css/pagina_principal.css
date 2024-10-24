@@ -12,15 +12,16 @@
 }
 
 .dark-theme {
-    --background-color: #000;
-    --sidebar-bg: #323b4d; /* Azul escuro que harmoniza com o tema claro */
-    --sidebar-text-color: #d4d4d4; /* Cinza claro para bom contraste */
-    --message-sent-bg: #0084ff; /* Um azul ligeiramente mais escuro para melhor contraste */
-    --message-received-bg: #444; /* Cinza médio que se destaca no fundo */
-    --message-received: #e0e0e0; /* Cinza claro que se alinha ao tema */
-    --input-border: #555; /* Cinza escuro para borda */
-    --input-hover-bg: #0072d4; /* Azul vibrante para hover */
+    --background-color: #1a1a1a; /* Um cinza escuro suave para o fundo */
+    --sidebar-bg: #3e4f67; /* Um tom de azul-escuro acinzentado */
+    --sidebar-text-color: #d4d4d4; /* Um cinza claro para contrastar bem com o azul escuro */
+    --message-sent-bg: #0069d1; /* Um azul vibrante para mensagens enviadas */
+    --message-received-bg: #353940; /* Cinza médio, bem balanceado para mensagens recebidas */
+    --message-received: #d1d1d1; /* Um cinza claro para o texto das mensagens recebidas */
+    --input-border: #4c5057; /* Um tom mais escuro de cinza para a borda do input */
+    --input-hover-bg: #005bb5; /* Azul mais forte para hover nos inputs */
 }
+
 
 
 /* Estilo básico da página */
@@ -108,7 +109,7 @@ body {
     /* Personaliza o scroll da lista de contatos */
     overflow-y: overlay;
     scrollbar-width: thin;
-    scrollbar-color: white rgba(63, 162, 246, 1);
+    scrollbar-color: white none;
     &::-webkit-scrollbar {
         width: 2px;
     }
@@ -198,6 +199,9 @@ body {
 
 /* Estilo das mensagens */
 .message {
+    /* word-wrap: break-word;
+    max-width: 250px;
+    max-height: 250px; */
     padding: 12px 25px;
     border-radius: 20px;
     margin-bottom: 12px;

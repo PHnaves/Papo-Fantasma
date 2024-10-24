@@ -5,13 +5,11 @@
     --background-color: #f4f4f4;
     --sidebar-bg-color: rgba(63, 162, 246, 1);
     --sidebar-text-color: white;
-    --sidebar-icons-color: white;
     --contact-border-color: #cccccc71;
     --sent-message-bg-color: #007bff;
     --received-message-bg-color: #ccc;
     --button-bg-color: #007bff;
     --button-hover-bg-color: #006ee4;
-    --icon-hover-color: #000000;
     --border-color: #ccc;
     --header-border-color: #ccc;
     --text-color: black;
@@ -19,15 +17,13 @@
 
 .dark-theme {
     --background-color: #1e1e1e; /* Fundo principal escuro */
-    --sidebar-bg-color: rgba(45, 45, 45, 1); /* Cor escura para a sidebar */
-    --sidebar-text-color: #e0e0e0; /* Texto da sidebar em um tom claro */
+    --sidebar-bg-color: #3e4f67; /* Cor escura para a sidebar */
+    --sidebar-text-color: #d4d4d4; /* Texto da sidebar em um tom claro */
     --contact-border-color: rgba(255, 255, 255, 0.3); /* Borda de contato em um tom claro suave */
-    --sent-message-bg-color: #4a90e2; /* Azul suave para mensagens enviadas */
-    --received-message-bg-color: #333333; /* Fundo escuro para mensagens recebidas */
+    --sent-message-bg-color: #0069d1; /* Azul suave para mensagens enviadas */
+    --received-message-bg-color: #353940; /* Fundo escuro para mensagens recebidas */
     --button-bg-color: #4a90e2; /* Azul suave para botões */
     --button-hover-bg-color: #007bff; /* Azul mais intenso para hover em botões */
-    --icon-hover-color: #ffffff; /* Branco para o hover dos ícones */
-    /* --border-color: rgba(255, 255, 255, 0.2); Borda clara suave */
     --header-border-color: rgba(255, 255, 255, 0.2); /* Borda do cabeçalho em um tom claro */
     --text-color: #ffffff; /* Texto em branco para melhor contraste no fundo escuro */
 }
@@ -135,7 +131,7 @@ body {
     /* Personaliza o scroll da lista de contatos */
     overflow-y: overlay;
     scrollbar-width: thin;
-    scrollbar-color: white rgba(63, 162, 246, 1);
+    scrollbar-color: white none;
     &::-webkit-scrollbar {
         width: 2px;
     }

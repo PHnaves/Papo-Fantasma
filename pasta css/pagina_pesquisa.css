@@ -15,13 +15,12 @@
     --list-item-text-color: #000000;
     --filter-bg: white;
     --filter-shadow: rgba(0, 0, 0, 0.1);
-    --footer-icon-color: white;
 }
 
 .dark-theme {
     --background-color: #1e1e1e;
-    --sidebar-bg: rgba(45, 45, 45, 1);
-    --sidebar-text-color: #e0e0e0;
+    --sidebar-bg: #3e4f67;
+    --sidebar-text-color: #d4d4d4;
     --input-bg: #c0c0c0;
     --input-focus-bg: #444444;
     --input-placeholder-color: #000000;
@@ -32,7 +31,6 @@
     --list-item-text-color: #e0e0e0;
     --filter-bg: #ffffff;
     --filter-shadow: rgba(0, 0, 0, 0.5);
-    --footer-icon-color: #bbbbbb;
 }
 
 /* Estilos gerais */

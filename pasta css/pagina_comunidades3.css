@@ -15,14 +15,8 @@
 
 .dark-theme {
     --background-color: #1e1e1e; /* Fundo principal escuro */
-    --sidebar-background: rgba(45, 45, 45, 1); /* Cor escura para o fundo da sidebar */
+    --sidebar-background: #3e4f67; /* Cor escura para o fundo da sidebar */
     --sidebar-icon-color: #d1d1d1; /* Cor clara para os ícones da sidebar */
-    --header-icon-color: white;
-    --sidebar-icon-hover-color: #000000; /* Branco para o hover dos ícones da sidebar */
-    --active-icon-size: 2.3rem; /* Tamanho dos ícones ativos permanece o mesmo */
-    --active-icon-color: #ffffff; /* Branco para ícones ativos */
-    --input-background: #2a2a2a; /* Fundo escuro para inputs */
-    --textarea-background: #2a2a2a; /* Fundo escuro para áreas de texto */
     --textarea-border-color: #4a90e2; /* Azul suave para a borda da área de texto */
     --textarea-shadow-color: rgba(74, 144, 226, 0.5); /* Sombra azul adaptada para o modo escuro */
 }
