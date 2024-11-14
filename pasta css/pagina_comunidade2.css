@@ -17,20 +17,22 @@
 }
 
 .dark-theme {
-    --bg-color: #1e1e1e; /* Fundo principal escuro */
-    --sidebar-bg: #3e4f67; /* Cor escura para a sidebar */
+    --bg-color: #000000; /* Fundo principal escuro */
+    --sidebar-bg: #1E3E62; /* Cor escura para a sidebar */
     --sidebar-text: #d4d4d4; /* Texto da sidebar em um tom claro */
     --textarea-bg: #ffffff; /* Fundo escuro para áreas de texto */
     --textarea-border: #4a90e2; /* Azul suave para a borda da área de texto */
     --textarea-focus-shadow: rgba(74, 144, 226, 0.5); /* Sombra azul adaptada para o modo escuro */
 }
 
-
-body {
-    background-color: var(--bg-color);
-    font-family: 'Roboto', sans-serif;
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dark-theme body {
+    background-color: var(--bg-color);
 }
 
 /* Container principal de chat */
@@ -115,6 +117,9 @@ body {
 
 /* Área da comunidade */
 .comunidade-area {
+    /* borda superior e inferior esquerda arrendondadas */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     width: 70%;
     background-color: var(--comunidade-bg);
     padding: 20px;

@@ -12,20 +12,22 @@
 }
 
 .dark-theme {
-    --primary-bg: #1e1e1e; /* Fundo principal escuro */
-    --sidebar-bg: #3e4f67; /* Cor escura para a sidebar */
+    --primary-bg: #000000; /* Fundo principal escuro */
+    --sidebar-bg: #1E3E62; /* Cor escura para a sidebar */
     --text-color: #d4d4d4; /* Texto em um tom claro para legibilidade */
     /* --link-color: #e0e0e0; Cor clara para links */
     --link-hover-color: #4a90e2; /* Azul suave para o hover dos links */
     /* --border-color: rgba(255, 255, 255, 0.2); Borda clara suave */
 }
 
-
-body {
-    background-color: var(--primary-bg);
-    font-family: 'Roboto', sans-serif;
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dark-theme body {
+    background-color: var(--primary-bg);
     color: var(--text-color);
 }
 
@@ -106,6 +108,9 @@ body {
 }
 
 .configuracoes-area {
+    /* borda superior e inferior esquerda arrendondadas */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     width: 70%;
     color: black;
     background-color: white;
